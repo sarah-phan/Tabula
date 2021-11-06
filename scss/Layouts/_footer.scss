@@ -1,0 +1,100 @@
+footer{
+    background-image: url(../images/footer_background.jpg);
+    @include styleBackgroundImage(bottom, cover, 520px);
+    color: $color-white;
+    padding-top: $pd-3;
+    padding-bottom: $pd-3;
+    .footer__content{
+        margin: auto;
+        width: 80%;
+        h4{
+            margin-bottom: $mg-9;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: $fw-3;
+        }
+        .col-3{
+            ul{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $color-white;
+                    font-size: $fs-2;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                li{
+                    p{
+                        font-size: $fs-2;
+                    }
+                }
+            }
+            .footer__contactus{
+                li{
+                    margin-bottom: $mg-3;
+                    p{
+                        display: inline;
+                        margin-left: $mg-2 + 0.1em;
+                    }
+                    i{
+                        font-size: $fs-2;
+                    }
+                    a{
+                        i{
+                            margin-top: $pd-5;
+                            margin-right: $pd-8;
+                            font-size: $fs-2 + 0.1em;
+                            
+                        }
+                    }
+                }
+            }
+            .footer__links{
+                width: 230px;
+                li{
+                    margin-bottom: $pd-8 - 2px;
+                    border-bottom: 1px solid $color-gray-4;
+                    padding-bottom: $pd-8;
+                }
+            }
+            .footer__about{
+                @extend .footer__links;
+            }
+            .footer__subscribe{
+                #inputEmail{
+                    display: block;
+                    border: 1px solid $color-white-2;
+                    background-color: transparent;
+                    padding: $pd-8 $pd-9 + 5px;
+                    border-radius: $radius-1;
+                    text-align: center;
+                    color: $color-white;
+                    margin-bottom: $mg-2;
+                    outline: none;
+                    &:focus{
+                        border: 1px solid $color-white;
+                    }
+                }
+                ::placeholder{
+                    color: $color-white;
+                }
+                button{
+                    font-family: 'Montserrat', sans-serif;
+
+                    @include styleButton($pd-8, $pd-10, 1px solid $color-white, $radius-1, $color-white);
+                    background-image: linear-gradient($color-purple, $color-purple);
+
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 0%;
+                    transition: background-size 0.2s, color 0.2s;
+
+                    &:hover{
+                        color: $color-white;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+    }
+}

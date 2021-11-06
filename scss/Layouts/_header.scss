@@ -60,8 +60,9 @@ header {
     }
     button {
         margin-right: $mg-2 + 0.5em;
-        @include styleButton($pd-1 + 0.4em, $pd-1 - 0.4em, solid $color-purple, $radius-1, $color-purple);
+        @include styleButton($pd-1 - 0.4em, $pd-1 + 0.4em, solid $color-purple, $radius-1, $color-purple);
         @include styleText($color-white, $fs-1 - 2px,$fw-2);
+        
         background-image: linear-gradient($color-white, $color-white);
         background-position: 50% 50%;
         background-repeat: no-repeat;

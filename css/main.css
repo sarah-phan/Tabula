@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+  background-color: #fff;
+  color: #181818;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+header {
+  position: relative;
+  background-image: url(../images/yellow_top_wave_01.png);
+  background-position: center;
+  background-size: cover;
+  height: 235px;
+}
+
+header .navbar {
+  margin-left: 160px;
+  margin-right: 185px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+}
+
+header .navbar-nav .nav-item .nav-link {
+  position: relative;
+  padding: 0 50px 0 0;
+  line-height: 63.63px;
+  color: #181818;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+header .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  color: #b61984;
+  background-color: #b61984;
+  position: absolute;
+  left: 17%;
+  top: 108%;
+  border-radius: 30px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+header .navbar-nav .nav-item .nav-link:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header .navbar-nav .nav-item .nav-link:hover {
+  color: #b61984;
+}
+
+header .navbar-nav .active {
+  position: relative;
+}
+
+header .navbar-nav .active::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  color: #b61984;
+  background-color: #b61984;
+  position: absolute;
+  left: 20%;
+  top: 105%;
+  border-radius: 30px;
+}
+
+header .navbar-nav .contact button {
+  margin: 0.5em;
+  padding: 0.8em 1.5em;
+  border: solid #b61984;
+  border-radius: 30px;
+  background: #b61984;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(#fff, #fff);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  -webkit-transition: background-size .2s, color .2s;
+  transition: background-size .2s, color .2s;
+}
+
+header .navbar-nav .contact button:hover {
+  color: #b61984;
+  background-size: 100% 100%;
+}
+
+header .navbar-nav .contact .fab {
+  line-height: 48.63px;
+  color: #181818;
+}
+
+header .navbar-nav .contact .fab:hover {
+  color: #b61984;
+}
+
+.tabulaCarousel {
+  margin-left: 160px;
+}
+
+.tabulaCarousel .col-6 p {
+  font-size: 1.25em;
+}
+/*# sourceMappingURL=main.css.map */

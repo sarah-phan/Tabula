@@ -1,0 +1,20 @@
+// Helper
+@import './Helper/variable';
+@import './Helper/mixin';
+
+// Vendor
+
+// Base
+@import './Base/customize';
+@import './Base/reset';
+@import './Base/responsive';
+
+// Components
+@import './Component/button';
+
+// Layouts
+@import './Layouts/header';
+@import './Layouts/carousel';
+
+// Pages: chứa các trang web nhỏ hơn nhưng chứa các thành phần riêng của nó, chung phải thêm vào layout
+// Theme: Không chứa bố cục vì theme chỉ đổi background (màu + ảnh), bố cục được thêm những folder trên

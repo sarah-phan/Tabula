@@ -4,10 +4,22 @@
     font-weight: $fw;
 }
 
-@mixin styleButton($pd-y, $pd-x, $bd, $radius, $bg-color, $color) {
+@mixin styleButton($pd-y, $pd-x, $bd, $radius, $bg-color) {
     padding: $pd-x $pd-y;
     border: $bd;
     border-radius: $radius;
     background: $bg-color; 
-    color: $color;  
+}
+
+@mixin styleTitle($color, $fs, $fw){
+    font-family: 'Montserrat', sans-serif;
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleBackgroundImage($bg-position, $bg-size, $height){
+    background-position: $bg-position;
+    background-size: $bg-size;
+    height: $height;
 }

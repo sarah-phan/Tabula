@@ -1,19 +1,27 @@
+.navbar__scroll#headerMenu{
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    color: black;
+    width: 100%;
+    padding-left: 20%;
+    margin-left: -190px;
+    box-shadow: -1px 6px 20px #cccccc80;
+}
 header {
     position: relative;
     background-image: url(../images/yellow_top_wave_01.png);
     @include styleBackgroundImage (center, cover, 221px);
-    width: 101%;
-
     .navbar-brand {
         padding-top: 0px;
     }
     .navbar {
-        margin-left: $mg-5;
-        margin-right: $mg-6;
         font-family: "Montserrat", sans-serif;
         padding: 0;
+        position: fixed;
+        z-index: 999;
     }
     .navbar-nav {
+        padding-left: $mg-5 + 8px;
         .nav-item {
             position: relative;
             .nav-link {

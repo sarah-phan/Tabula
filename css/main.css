@@ -13,13 +13,23 @@ html, body {
   font-weight: 400;
 }
 
+.navbar__scroll#headerMenu {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: black;
+  width: 100%;
+  padding-left: 20%;
+  margin-left: -190px;
+  -webkit-box-shadow: -1px 6px 20px #cccccc80;
+          box-shadow: -1px 6px 20px #cccccc80;
+}
+
 header {
   position: relative;
   background-image: url(../images/yellow_top_wave_01.png);
   background-position: center;
   background-size: cover;
   height: 221px;
-  width: 101%;
 }
 
 header .navbar-brand {
@@ -27,10 +37,14 @@ header .navbar-brand {
 }
 
 header .navbar {
-  margin-left: 160px;
-  margin-right: 185px;
   font-family: "Montserrat", sans-serif;
   padding: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+header .navbar-nav {
+  padding-left: 168px;
 }
 
 header .navbar-nav .nav-item {

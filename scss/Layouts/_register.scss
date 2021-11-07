@@ -1,7 +1,6 @@
 .register{
     padding-top: $pd-4 - 8em;
     background-image: url(../images/accent_bottom_wave_01.png);
-    
     @include styleBackgroundImage(bottom, contain, 710px);
     background-repeat: no-repeat;
 
@@ -83,6 +82,45 @@
                         color: $color-purple;
                         background-size: 100% 100%;
                     }
+                }
+            }
+        }
+    }
+}
+
+@include mediaQuery ("extra-large"){
+    .register{
+        .register__content{
+            margin-left: $mg-14 + 10px;
+            margin-right: $mg-14 + 1px;
+            img{
+                width: 526px;
+                height: 526px;
+            }
+            .register__item{
+                width: 373px;
+                h1{
+                    font-size: $fs-7 - 0.5rem;
+                    text-align: left;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+} 
+@include mediaQuery ("large"){
+    .register{
+        padding-top: $pd-11;
+        height: 100%;
+        .register__content{
+            img{
+                width: 580px;
+                height: 580px;
+            }
+            .register__item{
+                width: 99%;
+                h1{
+                    padding-top: 75px;
                 }
             }
         }

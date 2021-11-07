@@ -11,6 +11,7 @@
             border: 0;
             margin-top: $mg-8 - 10px;
             transition: all 0.2s;
+            width: 18rem;
             &:hover{
                 box-shadow: 1px 18px 20px 0px $color-gray;
             }
@@ -48,6 +49,56 @@
                     margin-bottom: $mg-2 + 0.3em;
                     font-family: 'Montserrat', sans-serif;
                 }
+            }
+        }
+    }
+}
+
+@include mediaQuery ("extra-large"){
+    .profile{
+        .row{
+            .card{
+                .card-body{
+                    p{
+                        &:last-of-type{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                width: 13rem;
+            }
+        }
+    }
+}
+@include mediaQuery ("large"){
+    .profile{
+        .row{
+            .card{
+                .card-body{
+                    p{
+                        &:last-of-type{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                width: 25rem;
+            }
+        }
+    }
+}
+
+@include mediaQuery ("small"){
+    .profile{
+        .row{
+            .card{
+                .card-body{
+                    p{
+                        &:last-of-type{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                width: 13rem;
             }
         }
     }

@@ -12,14 +12,13 @@ function remove_class_on_scroll() {
 }
 
 window.addEventListener('scroll', function(){ 
-    //Here you forgot to update the value
     scrollpos = window.scrollY;
-
-    if(scrollpos > 300){
+    
+    if(scrollpos >= 400){
         add_class_on_scroll();
     }
     else {
         remove_class_on_scroll();
     }
-    console.log(scrollpos);
+    // console.log(scrollpos);
 });

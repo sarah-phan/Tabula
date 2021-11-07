@@ -12,7 +12,7 @@ footer{
             font-family: 'Montserrat', sans-serif;
             font-weight: $fw-3;
         }
-        .col-3{
+        .col-lg-3{
             ul{
                 list-style: none;
                 a{
@@ -31,7 +31,7 @@ footer{
             }
             .footer__contactus{
                 li{
-                    margin-bottom: $mg-3;
+                    margin-bottom: $mg-2;
                     p{
                         display: inline;
                         margin-left: $mg-2 + 0.1em;
@@ -93,6 +93,26 @@ footer{
                         color: $color-white;
                         background-size: 100% 100%;
                     }
+                }
+            }
+        }
+    }
+}
+
+@include mediaQuery("large"){
+    footer{
+        height: 777px;
+        .footer__content{
+            width: 93%;
+            .col-lg-3{
+                .footer__links, .footer__newsletter{
+                    padding-left: 70px;
+                }
+                .footer__about{
+                    padding-left: 0;
+                }
+                .footer__about, .footer__newsletter{
+                    padding-top: 55px;
                 }
             }
         }

@@ -39,19 +39,35 @@ $pd-7: 50px;
 $pd-8: 10px;
 $pd-9: 25px;
 $pd-10: 77px;
+$pd-11: 80em;
 
 // margin
 $mg-1: auto;
 $mg-2: 0.5em;
 $mg-3: 4em;
-$mg-3: 6px;
+$mg-14: 6px;
 $mg-4: 150px;
 $mg-5: 160px;
 $mg-6: 185px;
 $mg-7: 245px;
 $mg-8: 50px;
 $mg-9: 30px;
+$mg-10: -48px;
+$mg-11: -130px;
+$mg-12: 425px;
+$mg-13: 520px;
 
 // border-radius
 $radius-1: 30px;
 $radius-2: 10px;
+
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+);

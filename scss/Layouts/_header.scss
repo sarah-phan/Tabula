@@ -1,6 +1,5 @@
 
 header {
-    position: relative;
     background-image: url(../images/yellow_top_wave_01.png);
     @include styleBackgroundImage(center, cover, 221px);
     .navbar-brand {
@@ -11,6 +10,18 @@ header {
         padding: 0;
         position: fixed;
         z-index: 999;
+        button{
+            i{
+                color: $color-black;
+                font-size: $fs-7 - 0.5rem;
+            }
+        }
+        .navbar-collapse{
+            // background-color: $color-white;
+            .header__social{
+                text-align: center;
+            }
+        }
     }
     .navbar-nav {
         padding-left: $mg-5 + 8px;
@@ -57,32 +68,40 @@ header {
                 border-radius: $radius-1;
             }
         }
-    }
-    button {
-        margin-right: $mg-2 + 0.5em;
-        @include styleButton($pd-1 - 0.4em, $pd-1 + 0.4em, solid $color-purple, $radius-1, $color-purple);
-        @include styleText($color-white, $fs-1 - 2px, $fw-2);
-
-        background-image: linear-gradient($color-white, $color-white);
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: 0% 0%;
-        transition: background-size 0.2s, color 0.2s;
-
-        &:hover {
-            color: $color-purple;
-            background-size: 100% 100%;
-        }
-    }
-    .header__social {
-        .header__icon {
-            display: inline;
-            margin-right: $mg-2;
-            text-decoration: none;
-            .fab {
-                color: $color-black;
-                &:hover {
+        button {
+            margin-right: $mg-2 + 0.5em;
+            @include styleButton($pd-1 - 0.4em, $pd-1 + 0.4em, solid $color-purple, $radius-1, $color-purple);
+            @include styleText($color-white, $fs-1 - 2px, $fw-2);
+    
+            background-image: linear-gradient($color-white, $color-white);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: 0% 0%;
+            transition: background-size 0.2s, color 0.2s;
+            i{
+                font-size: $fs-3;
+                color: $color-white;
+            }
+    
+            &:hover {
+                color: $color-purple;
+                background-size: 100% 100%;
+                i{
                     color: $color-purple;
+                }
+            }
+        }
+        .header__social {
+            .header__icon {
+                display: inline;
+                margin-right: $mg-2;
+                text-decoration: none;
+                line-height: 4;
+                .fab {
+                    color: $color-black;
+                    &:hover {
+                        color: $color-purple;
+                    }
                 }
             }
         }
@@ -98,4 +117,31 @@ header {
     margin-left: -190px;
     box-shadow: -1px 6px 20px #cccccc80;
     transition: all 0.2s;
+}
+
+@include mediaQuery("extra-large"){
+    header{
+        .navbar-brand{
+            img{
+                width: 48px;
+                height: 48px;
+            } 
+        }
+        .navbar{
+            background-color: $color-white;
+            padding-right: 86%;
+            margin-left: -16px;
+        }
+        .navbar__scroll#headerMenu{
+            min-width: 200%;
+        }
+    }
+}
+
+@include mediaQuery("extra-large"){
+    header{
+        .navbar{
+            padding-right: 83%;
+        }
+    }
 }

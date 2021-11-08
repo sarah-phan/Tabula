@@ -24,10 +24,82 @@
         .image{
             bottom: 25px;
             right: 100px;
+            height: 620px;
+            width: 620px;
             img{
-                height: 620px;
-                width: 620px;
+                width: 100%;
+                height: auto;
             }   
         }
     } 
+}
+
+@include mediaQuery ("extra-large"){
+    .tabulaCarousel{
+        height: 195px;
+        .row{
+            margin-left: 0;
+            .text{
+                h1{
+                    font-size: 3rem;
+                }
+                text-align: left;
+            }
+            .image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include mediaQuery ("large"){
+    .tabulaCarousel{
+        margin-top: 57%;
+        .row{
+            margin-left: 10px;
+            .text{
+                p{
+                    margin-top: 10px;
+                }
+                h1{
+                    font-size: 3.2rem;
+                }
+            }
+            .image{
+                img{
+                    margin-left: 105px;
+                    margin-top: 70px;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@include mediaQuery ("medium"){
+    .tabulaCarousel{
+        margin-top: 77%;
+        .row{
+            .image{
+                img{
+                    margin-left: 105px;
+                    margin-top: 102px;
+                }
+            }
+        }
+    }
+}
+@include mediaQuery ("small"){
+    .tabulaCarousel{
+        margin-top: 90%;
+        height: 78px;
+        .row{
+            .text{
+                h1{
+                    font-size: 3.2rem;
+                    width: 95%;
+                }
+            }
+        }
+    }
 }

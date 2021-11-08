@@ -81,7 +81,24 @@
                         }
                     }
                 }
-                width: 25rem;
+                width: 23rem;
+            }
+        }
+    }
+}
+
+@include mediaQuery ("medium"){
+    .profile{
+        .row{
+            .card{
+                .card-body{
+                    p{
+                        &:last-of-type{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                width: 15rem;
             }
         }
     }

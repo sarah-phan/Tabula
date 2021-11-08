@@ -174,9 +174,15 @@ header .navbar-nav .header__social .header__icon .fab:hover {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   header .navbar {
     padding-right: 83%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .navbar {
+    padding-right: 70%;
   }
 }
 
@@ -216,11 +222,72 @@ header .navbar-nav .header__social .header__icon .fab:hover {
 .tabulaCarousel .row .image {
   bottom: 25px;
   right: 100px;
+  height: 620px;
+  width: 620px;
 }
 
 .tabulaCarousel .row .image img {
-  height: 620px;
-  width: 620px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .tabulaCarousel {
+    height: 195px;
+  }
+  .tabulaCarousel .row {
+    margin-left: 0;
+  }
+  .tabulaCarousel .row .text {
+    text-align: left;
+  }
+  .tabulaCarousel .row .text h1 {
+    font-size: 3rem;
+  }
+  .tabulaCarousel .row .image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tabulaCarousel {
+    margin-top: 57%;
+  }
+  .tabulaCarousel .row {
+    margin-left: 10px;
+  }
+  .tabulaCarousel .row .text p {
+    margin-top: 10px;
+  }
+  .tabulaCarousel .row .text h1 {
+    font-size: 3.2rem;
+  }
+  .tabulaCarousel .row .image img {
+    margin-left: 105px;
+    margin-top: 70px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabulaCarousel {
+    margin-top: 77%;
+  }
+  .tabulaCarousel .row .image img {
+    margin-left: 105px;
+    margin-top: 102px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tabulaCarousel {
+    margin-top: 90%;
+    height: 78px;
+  }
+  .tabulaCarousel .row .text h1 {
+    font-size: 3.2rem;
+    width: 95%;
+  }
 }
 
 .profile {
@@ -305,10 +372,19 @@ header .navbar-nav .header__social .header__icon .fab:hover {
 
 @media screen and (max-width: 992px) {
   .profile .row .card {
-    width: 25rem;
+    width: 23rem;
   }
   .profile .row .card .card-body p:last-of-type {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile .row .card {
+    width: 15rem;
+  }
+  .profile .row .card .card-body p:last-of-type {
+    font-size: 13px;
   }
 }
 
@@ -479,6 +555,17 @@ header .navbar-nav .header__social .header__icon .fab:hover {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .register {
+    padding-top: 160em;
+    height: 100%;
+  }
+  .register .register__content img {
+    width: 383px;
+    height: 383px;
+  }
+}
+
 footer {
   background-image: url(../images/footer_background.jpg);
   background-position: bottom;
@@ -585,6 +672,10 @@ footer .footer__content .col-lg-3 .footer__subscribe button {
   border: 1px solid #fff;
   border-radius: 30px;
   background: #fff;
+  color: #181818;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b61984), to(#b61984));
   background-image: linear-gradient(#b61984, #b61984);
   background-position: 50% 50%;
@@ -614,6 +705,34 @@ footer .footer__content .col-lg-3 .footer__subscribe button:hover {
   }
   footer .footer__content .col-lg-3 .footer__about, footer .footer__content .col-lg-3 .footer__newsletter {
     padding-top: 55px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .footer__content .col-lg-3 .footer__links, footer .footer__content .col-lg-3 .footer__about, footer .footer__content .col-lg-3 .footer__newsletter {
+    padding-left: 26px;
+  }
+  footer .footer__content .col-lg-3 .footer__links li, footer .footer__content .col-lg-3 .footer__about li {
+    width: 135px;
+  }
+  footer .footer__content .col-lg-3 .footer__subscribe #inputEmail {
+    padding: 10px 6px;
+  }
+  footer .footer__content .col-lg-3 .footer__subscribe ::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  footer .footer__content .col-lg-3 .footer__subscribe :-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  footer .footer__content .col-lg-3 .footer__subscribe ::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  footer .footer__content .col-lg-3 .footer__subscribe ::placeholder {
+    font-size: 0.8rem;
+  }
+  footer .footer__content .col-lg-3 .footer__subscribe button {
+    padding: 10px 54px;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

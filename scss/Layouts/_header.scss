@@ -138,10 +138,17 @@ header {
     }
 }
 
-@include mediaQuery("extra-large"){
+@include mediaQuery("large"){
     header{
         .navbar{
             padding-right: 83%;
+        }
+    }
+}
+@include mediaQuery("small"){
+    header{
+        .navbar{
+            padding-right: 70%;
         }
     }
 }

@@ -82,6 +82,8 @@ footer{
                     font-family: 'Montserrat', sans-serif;
 
                     @include styleButton($pd-8, $pd-10, 1px solid $color-white, $radius-1, $color-white);
+                    @include styleText($color-black, $fs-5, $fw-3);
+                    text-transform: uppercase;
                     background-image: linear-gradient($color-purple, $color-purple);
 
                     background-position: 50% 50%;
@@ -113,6 +115,35 @@ footer{
                 }
                 .footer__about, .footer__newsletter{
                     padding-top: 55px;
+                }
+            }
+        }
+    }
+}
+
+@include mediaQuery("small"){
+    footer{
+        .footer__content{
+            .col-lg-3{
+                .footer__links, .footer__newsletter{
+                    padding-left: 26px;
+                }
+                .footer__links{
+                    li{
+                        width: 135px;
+                    }
+                }
+                .footer__subscribe{
+                    #inputEmail{
+                        padding: $pd-8 $pd-8 - 4px;
+                    }
+                    ::placeholder{
+                        font-size: $fs-5 + 0.05rem;
+                    }
+                    button{
+                        padding: $pd-8 $pd-7 + 4px;
+                        font-size: $fs-5 + 0.05rem;
+                    }
                 }
             }
         }

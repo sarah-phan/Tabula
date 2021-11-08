@@ -126,3 +126,16 @@
         }
     }
 }
+
+@include mediaQuery ("small"){
+    .register{
+        padding-top: 160em;
+        height: 100%;
+        .register__content{
+            img{
+                width: 383px;
+                height: 383px;
+            }
+        }
+    }
+}

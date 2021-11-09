@@ -102,7 +102,7 @@
                 h1{
                     font-size: $fs-7 - 0.5rem;
                     text-align: left;
-                    margin-bottom: 35px;
+                    margin-bottom: $mg-9 + 5px;
                 }
             }
         }
@@ -120,7 +120,7 @@
             .register__item{
                 width: 99%;
                 h1{
-                    padding-top: 75px;
+                    padding-top: $pd-10 - 2px;
                 }
             }
         }
@@ -129,7 +129,7 @@
 
 @include mediaQuery ("small"){
     .register{
-        padding-top: 160em;
+        padding-top: $pd-7 + 10px;
         height: 100%;
         .register__content{
             img{

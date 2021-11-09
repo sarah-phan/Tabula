@@ -41,7 +41,7 @@
             margin-left: 0;
             .text{
                 h1{
-                    font-size: 3rem;
+                    font-size: $fs-4 - 0.8rem;
                 }
                 text-align: left;
             }
@@ -57,19 +57,19 @@
     .tabulaCarousel{
         margin-top: 57%;
         .row{
-            margin-left: 10px;
+            margin-left: $mg-14 + 4px;
             .text{
                 p{
-                    margin-top: 10px;
+                    margin-top: $mg-14 + 4px;
                 }
                 h1{
-                    font-size: 3.2rem;
+                    font-size: $fs-4 - 0.6rem;
                 }
             }
             .image{
                 img{
-                    margin-left: 105px;
-                    margin-top: 70px;
+                    margin-left: $mg-15;
+                    margin-top: $mg-16;
                     width: 70%;
                 }
             }
@@ -82,8 +82,8 @@
         .row{
             .image{
                 img{
-                    margin-left: 105px;
-                    margin-top: 102px;
+                    margin-left: $mg-15;
+                    margin-top: $mg-15 - 3px;
                 }
             }
         }
@@ -96,7 +96,7 @@
         .row{
             .text{
                 h1{
-                    font-size: 3.2rem;
+                    font-size: $fs-4 - 0.6rem;
                     width: 95%;
                 }
             }

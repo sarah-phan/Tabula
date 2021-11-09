@@ -108,13 +108,13 @@ footer{
             width: 93%;
             .col-lg-3{
                 .footer__links, .footer__newsletter{
-                    padding-left: 70px;
+                    padding-left: $pd-10 - 7px;
                 }
                 .footer__about{
                     padding-left: 0;
                 }
                 .footer__about, .footer__newsletter{
-                    padding-top: 55px;
+                    padding-top: $pd-7 + 5px;
                 }
             }
         }
@@ -126,7 +126,7 @@ footer{
         .footer__content{
             .col-lg-3{
                 .footer__links, .footer__newsletter{
-                    padding-left: 26px;
+                    padding-left: $pd-9 + 1px;
                 }
                 .footer__links{
                     li{

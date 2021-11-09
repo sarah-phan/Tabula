@@ -557,7 +557,7 @@ header .navbar-nav .header__social .header__icon .fab:hover {
 
 @media screen and (max-width: 576px) {
   .register {
-    padding-top: 160em;
+    padding-top: 60px;
     height: 100%;
   }
   .register .register__content img {
